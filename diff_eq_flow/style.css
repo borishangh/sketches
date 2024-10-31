@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #eee;
+    margin: 50px;
+}
+
+canvas{
+    /* border: 1px solid black; */
+    margin: 10px;
+}
+
+button{
+    padding: 2px 5px;
+}
+
+input[type="range"] {
+    width: 200px;
+    margin: 0;
+  }

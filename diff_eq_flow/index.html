@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <label for="function-input">y' = </label>
+        <input type="text" id="function-input" value="sin(x) * cos(y)">
+        <button id="submit-function">Submit</button>
+    </div>
+
+    <div>
+        <label for="x-slider">X:</label>
+        <input type="range" id="x-slider" min="-5" max="5" step="0.01" value="-4">
+    </div>
+    <div>
+        <label for="y-slider">Y:</label>
+        <input type="range" id="y-slider" min="-5" max="5" step="0.01" value="2">
+    </div>
+
+    <canvas id = "canvas" width="500" height="500"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
