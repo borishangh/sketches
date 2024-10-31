@@ -2,12 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 body{
     width: min(800px, 80%);
     margin: 50px auto;
+    background: #ccc;
 }
 
 h1{
@@ -36,11 +37,16 @@ p, li{
     list-style: none;
     border: 1px solid black;
     border-radius: 2px;
-
+    background: white;
 }
 
 a{
     text-decoration: none;
     color: black;
-    font-size: 24px;
+    font-size: 22px;
+}
+
+a:hover{
+    color: white;
+    background: black;
 }
