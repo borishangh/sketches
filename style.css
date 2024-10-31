@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    width: min(600px, 80%);
+    margin: 50px auto;
+}
+
+h1{
+    margin-bottom: 30px;
+}
+
+p, li{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: gray;
+    text-decoration: none;
+    border-bottom: 1px solid gray;
+}
+
+a:hover{
+    font-style: italic;
+    color: white;
+    background: gray;
+}

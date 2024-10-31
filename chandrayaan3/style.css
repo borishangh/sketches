@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Mono', Consolas, monospace;
+}
+
+body {
+    margin: 20px auto;
+    background: #fcfcfc;
+    width: 90vw;
+}
+
+canvas {
+    margin: 5px;
+    background: black;
+}
+
+button {
+    padding: 2px 8px;
+}
+
+select,
+input {
+    padding: 2px 8px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.options {
+    width: fit-content;
+
+    border: 1px solid black;
+    margin: 20px 5px 10px;
+}
+
+.options>* {
+    margin: 10px;
+}
+
+footer {
+    margin: 20px 0;
+    width: min(80%, 400px);
+}

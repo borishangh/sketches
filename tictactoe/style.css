@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.main {
+    width: 90px;
+    margin: 0 auto
+}
+
+.areawrap {
+    padding-top: 40px
+}
+
+p {
+    font-size: smaller;
+    text-align: center;
+    padding-top: 10px;
+    cursor: default;
+}
+
+.head {
+    font-style: italic;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.area {
+    height: 90px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+
+.box {
+    background: #ffb6c1;
+    position: relative;
+    display: block;
+    height: 30px;
+    width: 30px
+}
+
+.box:nth-child(n+4) {
+    border-top: 1px solid #000
+}
+
+.box:nth-child(3n+1),
+.box:nth-child(3n+2) {
+    border-right: 1px solid #000
+}
+
+a:active {
+    background: #000
+}
+
+.wrap {
+    left: 100px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #000;
+    position: relative
+}
+
+.cross::after,
+.cross::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 2px;
+    height: 3px;
+    width: 25px;
+    border: 1px solid #000
+}
+
+.cross::before {
+    transform: rotate(45deg)
+}
+
+.cross::after {
+    transform: rotate(-45deg)
+}
+
+.circle::after,
+.circle::before {
+    content: '';
+    position: absolute;
+    border: 1px solid #000;
+    border-radius: 50%
+}
+
+.circle::before {
+    height: 22px;
+    width: 22px;
+    margin: 2px
+}
+
+.circle::after {
+    height: 14px;
+    width: 14px;
+    margin: 6px
+}
+
+.p1,
+.p2,
+.p3 {
+    height: 90px;
+    border-right: 1px solid #000
+}
+
+.p1 {
+    width: 15px
+}
+
+.p2 {
+    width: 45px
+}
+
+.p3 {
+    width: 75px
+}
+
+.q1,
+.q2,
+.q3 {
+    width: 90px;
+    border-bottom: 1px solid #000
+}
+
+.q1 {
+    height: 15px
+}
+
+.q2 {
+    height: 45px
+}
+
+.q3 {
+    height: 75px
+}
+
+.r1,
+.r2 {
+    width: 1px;
+    height: 127px;
+    margin: -18px 0 0 45px;
+    background: #000
+}
+
+.r1 {
+    margin: -18px 0 0 44.5px;
+    transform: rotate(44.5deg)
+}
+
+.r2 {
+    transform: rotate(-44.5deg)
+}
+
+i {
+    display: none;
+    position: absolute;
+    z-index: 10
+}
+
+.result {
+    position: absolute;
+    width: 90px;
+    text-align: center;
+    margin: 15px 0
+}
+
+.refresh {
+    position: absolute;
+    margin: 60px 15px;
+    font-size: smaller;
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #000;
+    text-align: center;
+    cursor: pointer
+}
+
+.refresh:active {
+    background-color: #ffb6c1
+}
+
+.turn {
+    position: relative;
+    border: 1px dotted #000;
+    height: 30px;
+    width: 30px;
+    margin: 30px 30px 0 30px
+}

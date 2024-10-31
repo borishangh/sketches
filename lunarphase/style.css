@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: black;
+
+}
+
+#moon-img {
+    filter: grayscale(1);
+    width: min(600px, 90vw);
+}

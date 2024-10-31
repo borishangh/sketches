@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Lissajous figures</h1>
+
+    <canvas id="canvas"></canvas>
+
+    <div class="input-field">
+
+        <div>
+            <input type="range" value="90" id="theta" name="theta" min="0" max="360" step="1" oninput="drawFigure()">
+            <label for="theta">theta</label>
+        </div>
+        <div>
+            <div>
+                <input type="range" value="1" id="f1" name="f1" min="1" max="11" step="1" oninput="drawFigure()">
+                <label for="f1">f1</label>
+            </div>
+            <div>
+                <input type="range" value="1" id="f2" name="f2" min="1" max="11" step="1" oninput="drawFigure()">
+                <label for="f2">f2</label>
+            </div>
+        </div>
+        <div>
+            <div>
+                <input type="range" value="200" id="r1" name="50" min="20" max="300" step="1" oninput="drawFigure()">
+                <label for="r1">r1</label>
+            </div>
+            <div>
+                <input type="range" value="100" id="r2" name="r2" min="20" max="200" step="1" oninput="drawFigure()">
+                <label for="r2">r2</label>
+            </div>
+        </div>
+        <div>
+            <span>Animate Theta :</span>
+            <button id="start-animate-btn" onclick="animateTheta()">Start</button>
+            <button id="stop-animate-btn" disabled=true onclick="stopAnimate()">Stop</button>
+        </div>
+        <div>
+            <div>
+                <input type="range" value="20" id="dps" name="dps" min="1" max="120" step="1" oninput="drawFigure()">
+                <label for="dps">deg/sec</label>
+            </div>
+            <div>
+                <input type="range" id="resolution" name="resolution" min="4" max="10" step="1" oninput="drawFigure()">
+                <label for="resolution">resolution</label>
+            </div>
+        </div>
+    </div>
+    <p style="width: min(400px, 70vw); margin: 30px 0; font-size: 16px;">
+    An interactive demo of lissajous curves. Mail me for bugs and suggestions at <i>borishan.gh@gmail.com.</i>
+    </p>
+    <script src="app.js"></script>
+</body>
+
+</html>

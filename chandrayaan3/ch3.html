@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer type="module" src="./scripts/app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>CHANDRAYAAN 3 MONITOR</h1>
+    </header>
+
+    <main>
+        <div class="options">
+            <div class="options-top">
+
+                <button id="view-btn">Detailed View
+                </button>
+                <select name="view-choice" id="view-choice">
+                    <option value="ch3_earth">CH3 wrt EMB</option>
+                    <option value="ch3_moon">CH3 wrt Moon</option>
+                    <option value="ch3_earth_small">CH3 wrt Earth</option>
+                </select>
+
+                <button id="view-all">Show All</button>
+            </div>
+
+            <div class="options-middle">
+                <span class="time">
+                    <label for="select-time">Jump To</label>
+                    <input type="datetime-local" name="select-time" id="select-time" min="2023-07-14T19:22:32"
+                        min="2023-09-11T23:17:32">
+                    <button id="now-btn">Now</button>
+                </span>
+            </div>
+            <div class="options-bottom">
+                <label for="speed">Speed</label>
+                <input type="range" id="speed" min="250" max="5000" value="250" step="1">
+                <span id="speed-value">250 min/sec</span>
+                <script defer>
+                    var slider = document.getElementById("speed");
+                    var sliderValue = document.getElementById("speed-value");
+
+                    localStorage.setItem("speed", 250)
+                    // Add event listener to track value changes
+                    slider.addEventListener("input", function () {
+                        localStorage.setItem("speed", slider.value)
+                        // Update text content with the current value of the slider
+                        sliderValue.textContent = slider.value + " min/sec";
+                    });
+                </script>
+            </div>
+
+        </div> <br>
+
+        <div class="monitor"></div>
+
+        <button id="stop-btn">Stop</button>
+        <button id="resume-btn">Resume</button>
+    </main>
+    <footer>
+        This demo was made using the CH3 ephemeris on <a href="https://ssd.jpl.nasa.gov/horizons/app.html#/">JPL
+            Horizons System</a> as of 2023-Jul-14 09:22.
+    </footer>
+</body>
+
+</html>

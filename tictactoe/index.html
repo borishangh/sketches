@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>ttt</title>
+</head>
+
+<body>
+    <div class="main">
+        <p class="head">a light pink tic tac toe site</p>
+        <p>press on any square</p>
+
+        <div class="turn circle"> </div>
+
+        <div class="areawrap">
+
+            <i class="p1"></i>
+            <i class="p2"></i>
+            <i class="p3"></i>
+
+            <i class="q1"></i>
+            <i class="q2"></i>
+            <i class="q3"></i>
+
+            <i class="r1"></i>
+            <i class="r2"></i>
+            <div class="area">
+                <div class="box a0" onclick="turn('.a0')"></div>
+                <div class="box a1" onclick="turn('.a1')"></div>
+                <div class="box a2" onclick="turn('.a2')"></div>
+                <div class="box a3" onclick="turn('.a3')"></div>
+                <div class="box a4" onclick="turn('.a4')"></div>
+                <div class="box a5" onclick="turn('.a5')"></div>
+                <div class="box a6" onclick="turn('.a6')"></div>
+                <div class="box a7" onclick="turn('.a7')"></div>
+                <div class="box a8" onclick="turn('.a8')"></div>
+            </div>
+        </div>
+
+        <div class="result"></div>
+        <div class="refresh" onclick="refresh()">refresh</div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
