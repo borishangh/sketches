@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ODE Phase Plane</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>ODE's on a Phase Plane</h1>
+    <p>
+        This sketch plots a single ODE on an XY plane. Enter a function in terms of x and y (elementary funcitons such as sin, cos, tan, exp, abs work too) into the text field and press go.
+    </p>
+    <p>Check out <a href="https://tutorial.math.lamar.edu/classes/de/phaseplane.aspx">Paul's notes on Phase Planes</a> for reference.</p>
     <div>
         <label for="function-input">y' = </label>
-        <input type="text" id="function-input" value="sin(x) * cos(y)">
-        <button id="submit-function">Submit</button>
+        <input type="text" id="function-input" value="x+y">
+        <button id="submit-function">Go!</button>
     </div>
 
     <div>
         <label for="x-slider">X:</label>
-        <input type="range" id="x-slider" min="-5" max="5" step="0.01" value="-4">
+        <input type="range" id="x-slider" min="-5" max="5" step="0.01" value="-2.95">
     </div>
     <div>
         <label for="y-slider">Y:</label>

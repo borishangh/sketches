@@ -6,7 +6,7 @@
 }
 
 body{
-    width: min(600px, 80%);
+    width: min(800px, 80%);
     margin: 50px auto;
 }
 
@@ -19,18 +19,28 @@ p, li{
     margin-bottom: 20px;
 }
 
-li{
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.list img{
+    width: 100%;
+}
+
+.list > a{
+    width: 180px;
+    padding: 5px;
+    display: block;
     list-style: none;
+    border: 1px solid black;
+    border-radius: 2px;
+
 }
 
 a{
-    color: gray;
     text-decoration: none;
-    border-bottom: 1px solid gray;
-}
-
-a:hover{
-    font-style: italic;
-    color: white;
-    background: gray;
+    color: black;
+    font-size: 24px;
 }
